@@ -12,7 +12,7 @@
 
 ### 01. 前言
 
-**Kotlin** 是一种在 **Java 虚拟机** 上运行的 **静态类型** 编程语言。主要由 **[JetBrains](https://www.jetbrains.com)** 开发团队设计并开源。在 **2017 ** 年的 **Google I/O** 大会上，**Google** 宣布 **Kotlin** 成为 **Android** 开发的一级语言。
+**Kotlin** 是一种在 **Java 虚拟机** 上运行的 **静态类型** 编程语言。主要由 **[JetBrains](https://www.jetbrains.com)** 开发团队设计并开源。在 **2017** 年的 **Google I/O** 大会上，**Google** 宣布 **Kotlin** 成为 **Android** 开发的一级语言。
 
 **Kotlin** 可以用于 **服务器端** 开发；可以用于 **Android** 开发；可以用于 **iOS** 开发；可以用于 **JavaScript** 开发；可以用于 **原生** 开发。
 
