@@ -14,8 +14,8 @@ if [[ $isGitHub = "y" ]]; then
     git config --global user.email 757307903@qq.com
 else
     echo "===>>> Config For Company."
-    git config --global user.name "chaizhoufeng"
-    git config --global user.email chaizhoufeng@guixue.com
+    git config --global user.name "JustDo23"
+    git config --global user.email 757307903@qq.com
 fi
 echo "===>>> Current Git Config:"
 echo -n "===>>> userName = "
