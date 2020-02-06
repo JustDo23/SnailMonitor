@@ -399,4 +399,5 @@ tailrec fun optimization(number: Long, result: Long): Long {
 ```
 
 * 关键字 **`tailrec`** 即为  **`tail recursive`** 翻译为 **`尾递归优化`**
+* 编译器会提示 **`尾递归优化`** 的 **`return`** 应该是当前函数本身
 
