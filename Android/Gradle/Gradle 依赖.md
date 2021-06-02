@@ -49,11 +49,11 @@ dependencies {// 本地依赖
 * 两者的区别主要体现在具有 **`多层级`** 依赖关系情况。
 
 ```groovy
-apply plugin: 'com.android.library'// 库 Module A
+apply plugin: 'com.android.library'// 库 Module B
 
 dependencies {// 本地依赖
-    implementation project(path: ':P')
-    api project(path: ':Q')
+    implementation project(path: ':X')
+    api project(path: ':Y')
 }
 ```
 
@@ -68,7 +68,7 @@ dependencies {// 本地依赖
 * 如上依赖传递层级足以体现两个修饰符之间区别的重要原因是：
   * 模块 **`A`** 和 **`B`** 是建立在本地的依赖库
 * 模块 **`P`** 和 **`X`** 只是在 **`调用`** 层面对 **`APP`** 隐藏了，其代码仍会被打进 **`APK`** 文件
-* 模块 **`P`** 和 **`Q`** 这一层是 **`本地或远程`** 依赖库都可以
+* 模块 **`P`** 和 **`Q`** 和 **`X`** 和 **`Y`** 这一层是 **`本地或远程`** 依赖库都可以
 
 **`Tips:`** 假设模块 **`A`** 是远程依赖，则模块 **`P`** 和 **`Q`** 也是远程依赖，模块 **`APP`** 添加 **`A`** 之后是否会自动下载导入 **`P`** 和 **`Q`** 是由 **`A`** 在远程 **`Maven`** 仓库的配置文件 **`.pom`** 决定的。
 
