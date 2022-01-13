@@ -6,6 +6,7 @@ read isUninstall # 接收输入
 if [[ $isUninstall = "y" ]]; then
     echo "===>>> Execute script."
     # 卸载程序脚本
+    rm -Rf ~/Library/Application\ Support/Google/AndroidStudio*
     rm -Rf /Applications/Android\ Studio.app
     rm -Rf ~/Library/Preferences/AndroidStudio*
     rm ~/Library/Preferences/com.google.android.studio.plist
